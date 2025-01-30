@@ -1,0 +1,63 @@
+                                             REACT
+
+React was introduced in 2013 by a company called Facebook by developer jordan walke.
+Before react there are 2 frameworks called backbone.js and ember.js which are first fgrameworks in javascript.
+it is used to develop single page application.
+it is a component based application.components are reusable.
+react is declarative.
+The idea behind react is Ajax.
+The react will render components on webpage without page reload.
+react uses MBC architecture - Model View Controller
+all windows uses MBC architecture.
+when we install react application 3 dependencies will create - react,react dom,react Script. 
+react methods createElement(),all the hooks.it uses diffing algorithm.
+reactDOm used to create virtual dom.
+react script used to run ,debug,test,eject the react application .
+yarn,vite are used to install latest version of react.
+npm create vite@latest
+
+VIRTUALDOM:it is a copy of real dom .it compare one to one with realdom.
+
+REALDOM:whatever we write on realdom that can be printed in webpage 
+
+
+for single page application - React.js
+for multipage application - Angular.js 
+
+Framework-collection of library
+Library-collection of functions or Methods
+
+
+
+HOW TO CREATE REACT?
+reacted can be created 2 ways using 
+1.CDN way - internet mandatory 
+2.Node way - constains 
+a.npm - node package manager
+  npm used to install,update,delete packages in js.in npm packages will be installed globally.
+  npm install -g create-react-app
+  create-react-app appname
+  npm create vite@latest ------> to install latest version of react.
+
+
+b.npx -node package executer
+ used to execute package without install
+ no need to install the packages globally.
+
+ npx create-react-app appname 
+ 
+
+
+
+
+ cd day1
+ npm create vite@latestnpx
+ create-vite
+ project name: app
+ slect framework: select react 
+ select variant: select javascript 
+ Done 
+ cd app
+ npm install
+ npm run dev  
+ copy path and paste in webpage or type letter o and press enter 
