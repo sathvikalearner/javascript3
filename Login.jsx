@@ -1,19 +1,25 @@
-import React from 'react'
-import { Routes , Route} from 'react-router-dom'
-import Login from './Login'
-import Dashboard from './Dashboard'
-import Error from './Error'
+import React, { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-
-const Master = () => {
-return (
-    <div><Routes>
-            <Route path="/" element={<Login></Login>}></Route>
-            <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
-            <Route path="/Error" element={<Error></Error>}></Route>
-        </Routes>
+const Login = () => {
+    let name = useRef()
+    let password = useRef()
+    let navigate = useNavigate()
+    let demo = () => {
+      name.current.value === "admin" && password.current.value === "admin@123" ?
+      navigate("/dashboard") : navigate("/error")
+    }
+  return (
+    <div>
+        <form action="">
+            Name : <input type="text" name="" id="" ref={name} />
+            <br />
+            Password : <input type="password" name="" id="" ref={password} />
+            <br />
+            <button onClick={demo}>submit</button>
+        </form>
     </div>
-)
+  )
 }
 
-export default Master
+export default Login
